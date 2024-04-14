@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+      <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        th {
+            text-align: left;
+            background-color: rgb(116, 227, 129);
+        }
+
+        Cuadro,
+        th,
+        td {
+            border: 1px solid rgb(167, 150, 150);
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        th {
+            text-align: left;
+            background-color: rgb(124, 170, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <table class="Cuadro">
+            <tr>
+                <th>Tipo de documento</th>
+            </tr>
+            <tr>
+                <td>
+                <select name="nose" id="nose" style="width: 94%; padding: 2%; margin: 3%;">
+                    <option disabled selected value="">
+                        Escoge una opcion
+                    </option>
+
+                    <option value="Boleta"> Boleta</option>
+                    <option value="Factura"> Factura</option>
+                </select>
+                <center>
+                <input type="text" size="20" style="padding: 2%;">
+                <input type="text" size="20" style="padding: 2%;">
+            </center>
+                </td>
+            </tr>
+        </table>
+
+    </h1>
+    </div><br>
+
+    <div class="compra">
+        <form method="post"></form>
+        <h2>
+            <div>Nueva Compra</div>
+        </h2>
+    </div>
+
+
+    <div class=" Cuadro1">
+
+
+        <div class="fecha">
+            <form method="post"></form>
+            <div>Fecha: </div>
+            <label for="Fecha"></label>
+            <input type="date" size="25">
+
+        </div>
+        <div class="pro">
+            <form method="post"></form>
+            <div>Proveedor(es):</div>
+            <label for="Proveedor(es)"></label>
+            <input type="text" size="30">
+        </div>
+        <div class="cod">
+            <form method="post"></form>
+            <div>Codigo de Barras:</div>
+            <label for="Codigo de Barras"></label>
+            <input type="text" size="25">
+        </div>
+        <div class="des">
+            <form method="post"></form>
+            <div>Descripcion:</div>
+            <label for="Descripcion"></label>
+            <input type="text" size="30">
+        </div>
+        <div class="pre">   
+            <form method="post"></form>
+            <div>Presentacion:</div>
+            <label for="Presentacion"></label>
+            <input type="text" size="25" >
+        </div>
+        <div class="precio">
+            <form method="post"></form>
+            <div>Precio:</div>
+            <label for="Precio"></label>
+            <input type="text" size="15">
+        </div>
+    </div>
+    <div>
+        <form method="post"></form>
+        <button class="Nuevo">Nuevo</button>
+    </div>
+    <div>
+        <form method="post"></form>
+        <button class="Agregar">Agregar</button>
+    </div>
+    <div>
+        <form method="post"></form>
+        <button class="Registrar">Registrar</button>
+    </div>
+
+    <div class=" Tabla">
+        <table align="center" border="1" style="width:223%;" class="table table-condensed table-bordered table-hover">
+            <tr>
+                <th>item</th>
+                <th>Descripcion</th>
+                <th>Presentacion</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Importe</th>
+                <th>Eliminar</th>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Lejia Sapolio 2,5L</td>
+                <td>L</td>
+                <td>4</td>
+                <td>5.50</td>
+                <td>22.00</td>
+                <td>
+                    <i class="fa-solid fa-trash-can fa-bounce" style="color: #c94a4a;"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Arroz Bell's 10kg</td>
+                <td>Kg</td>
+                <td>2</td>
+                <td>32.50</td>
+                <td>65.00</td>
+                <td>
+                    <i class="fa-solid fa-trash-can fa-bounce" style="color: #c94a4a;"></i>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="total">
+        <table style="width: 125%; ">
+            <span>
+                <tr>
+                    <td style="word-spacing: 10vw;"> SUBTOTAL 77.00 </td>
+                </tr>
+                <tr>
+                    <td style="word-spacing: 14vw;"> IGV 4.30</td>
+                </tr>
+            </span>
+            <tr>
+
+                <td style="background-color: rgb(124, 170, 255); font-size: 30px;"> TOTAL:
+                        81.30</td>
+
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
